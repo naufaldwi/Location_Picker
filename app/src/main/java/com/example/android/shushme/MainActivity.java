@@ -169,11 +169,9 @@ public class MainActivity extends AppCompatActivity implements
             getContentResolver().insert(PlaceContract.PlaceEntry.CONTENT_URI, contentValues);
         }
     }
-
     @Override
     public void onResume() {
         super.onResume();
-
         // Initialize location permissions checkbox
         CheckBox locationPermissions = (CheckBox) findViewById(R.id.location_permission_checkbox);
         if (ActivityCompat.checkSelfPermission(MainActivity.this,
